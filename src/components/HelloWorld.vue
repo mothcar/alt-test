@@ -16,7 +16,15 @@ export default {
   name: 'HelloWorld',
   props: {
     msg: String
-  }
+  },
+
+  async mounted() {
+    // let test = await this.$axios.get('http://localhost:9090/test/aa')
+    let test = await this.$axios.get(`${process.env.VUE_APP_SERVER_URL}/test/aa`)
+    console.log('Server response : ', test.data.data.item)
+    let test2 = process.env.VUE_APP_TEST
+    console.log('test2: ', test2)
+  }, // mounted
 }
 </script>
 
