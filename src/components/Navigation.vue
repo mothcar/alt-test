@@ -27,8 +27,8 @@
         </v-btn>
 
         <v-btn color="white" @click="goMy()">
-          <span>내정보</span>
-          <v-icon>mdi-account</v-icon>
+          <span>settings</span>
+          <v-img src="https://res.cloudinary.com/mothcar/image/upload/v1622019747/icons/settings_black_24dp.png"></v-img>
         </v-btn>
       </div>
     </v-bottom-navigation>

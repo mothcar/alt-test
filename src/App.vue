@@ -2,8 +2,8 @@
   <v-app>
     <Appbar/>
 
-    <v-main class="pa-0">
-      <v-container>
+    <v-main class="">
+      <v-container fill-height fluid>
         <Home/>
       </v-container>
       
