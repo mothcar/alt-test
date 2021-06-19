@@ -4,7 +4,7 @@
 
     <v-main class="">
       <v-container fill-height fluid>
-        <Home/>
+        <Map/>
       </v-container>
       
     </v-main>
@@ -19,6 +19,7 @@
 
 <script>
 import Home from './views/Home';
+import Map from './views/Map';
 import HelloWorld from './components/HelloWorld';
 import Appbar from './components/AppBar';
 import Navigation from './components/Navigation';
@@ -27,7 +28,7 @@ export default {
   name: 'App',
 
   components: {
-    HelloWorld, Home, Appbar, Navigation
+    HelloWorld, Home, Appbar, Navigation, Map
   },
 
   data: () => ({
