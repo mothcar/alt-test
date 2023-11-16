@@ -1,61 +1,75 @@
 <template>
-    <v-app-bar
-      app
-      color="primary"
-      dark
-      fade-img-on-scroll
-      hide-on-scroll
-    >
-
-      <!-- <v-spacer></v-spacer> -->
-
-      <v-col cols="2">
-        <v-img
-          alt="Vuetify Logo"
-          class="shrink mr-2"
-          contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-          transition="scale-transition"
-          width="40"
-        />
-        
-      </v-col>
-      <v-col class="d-flex justify-space-around">
-          <h2>{{getTitle}}</h2>
-      </v-col>
-      <v-col cols="2" class="d-flex justify-end">
-        <!-- <span style="font-size: 48px; ">
-          <i class="far fa-window-close" @click="browserReload"></i>
-        </span> -->
-      </v-col>
+    <v-app-bar color="white" white height="56" fixed app>
+        <v-btn icon>
+            <svg xmlns="http://www.w3.org/2000/svg" width="23.529" height="20" viewBox="0 0 20.503 17.621">
+                <g id="그룹_7" data-name="그룹 7" transform="translate(-130.797 -31)">
+                    <g id="Group_3" data-name="Group 3" transform="translate(-158.027 -359.436)">
+                        <g id="coupon" transform="translate(288.824 390.436)">
+                            <g id="Path_1638" data-name="Path 1638" transform="translate(0.266 0.266)">
+                                <path id="패스_1651" data-name="패스 1651" d="M303.829,390.8l-14.423,7.994a.569.569,0,0,0-.222.772l1.214,2.189a.415.415,0,0,0,.34.218,1.986,1.986,0,0,1,1.64,2.958.415.415,0,0,0,0,.4l1.214,2.189a.567.567,0,0,0,.772.222l14.423-7.994a.568.568,0,0,0,.222-.773l-4.411-7.957a.568.568,0,0,0-.773-.222Z" transform="translate(-289.113 -390.725)" fill="#5eb4f9"/>
+                            </g>
+                            <g id="Path_1639" data-name="Path 1639" transform="translate(4.805 1.324)">
+                                <path id="패스_1652" data-name="패스 1652" d="M308.278,399.371l-9.946,5.514a.284.284,0,0,1-.387-.111h0l-3.859-6.963a.284.284,0,0,1,.11-.386h0l9.947-5.513a.284.284,0,0,1,.386.11h0l3.86,6.963A.284.284,0,0,1,308.278,399.371Z" transform="translate(-294.05 -391.876)" fill="#6fbfff"/>
+                            </g>
+                            <g id="Path_1642" data-name="Path 1642">
+                                <path id="패스_1653" data-name="패스 1653" d="M303.677,390.541l-14.423,7.994a.835.835,0,0,0-.325,1.135l1.213,2.188a.689.689,0,0,0,.561.355,1.72,1.72,0,0,1,1.421,2.562.683.683,0,0,0,0,.663l1.213,2.189a.836.836,0,0,0,1.135.326l14.423-7.995a.835.835,0,0,0,.325-1.135l-4.411-7.957A.834.834,0,0,0,303.677,390.541Zm5.081,8.542a.3.3,0,0,1-.118.412h0l-11.452,6.348-.008-.017a.266.266,0,0,0-.465.258l.009.016-2.506,1.389a.3.3,0,0,1-.412-.118h0l-1.213-2.189a.149.149,0,0,1,0-.145,2.253,2.253,0,0,0-1.86-3.355.15.15,0,0,1-.12-.081l-1.214-2.189a.3.3,0,0,1,.119-.411h0l2.5-1.387.008.016a.266.266,0,1,0,.465-.257l-.008-.016,11.455-6.35a.3.3,0,0,1,.411.118h0Z" transform="translate(-288.824 -390.436)" fill="#030504"/>
+                            </g>
+                            <g id="Path_1643" data-name="Path 1643" transform="translate(5.372 10.777)">
+                                <path id="패스_1654" data-name="패스 1654" d="M294.8,402.191a.266.266,0,0,0-.1.361h0l.276.5a.266.266,0,0,0,.465-.257l-.276-.5a.266.266,0,0,0-.361-.1Z" transform="translate(-294.667 -402.157)" fill="#030504"/>
+                            </g>
+                            <g id="Path_1644" data-name="Path 1644" transform="translate(3.718 7.793)">
+                                <path id="패스_1655" data-name="패스 1655" d="M293,398.945a.266.266,0,0,0-.1.361h0l.276.5a.266.266,0,1,0,.465-.257l-.276-.5a.266.266,0,0,0-.361-.1Z" transform="translate(-292.868 -398.912)" fill="#030504"/>
+                            </g>
+                            <g id="Path_1645" data-name="Path 1645" transform="translate(4.545 9.284)">
+                                <path id="패스_1656" data-name="패스 1656" d="M293.9,400.567a.268.268,0,0,0-.1.362h0l.276.5a.266.266,0,1,0,.465-.257l-.276-.5a.267.267,0,0,0-.361-.1Z" transform="translate(-293.767 -400.534)" fill="#030504"/>
+                            </g>
+                            <g id="Path_1646" data-name="Path 1646" transform="translate(6.199 12.268)">
+                                <path id="패스_1657" data-name="패스 1657" d="M295.7,403.813a.266.266,0,0,0-.1.361h0l.276.5a.266.266,0,0,0,.465-.258l-.276-.5a.265.265,0,0,0-.361-.1Z" transform="translate(-295.566 -403.779)" fill="#030504"/>
+                            </g>
+                            <g id="Path_1647" data-name="Path 1647" transform="translate(7.026 13.761)">
+                                <path id="패스_1658" data-name="패스 1658" d="M296.6,405.436a.266.266,0,0,0-.1.361h0l.276.5a.266.266,0,1,0,.465-.258l-.276-.5a.266.266,0,0,0-.361-.1Z" transform="translate(-296.466 -405.403)" fill="#030504"/>
+                            </g>
+                        </g>
+                        <g id="Group_1" data-name="Group 1" transform="translate(297.489 394.836)">
+                            <g id="S" style="isolation: isolate">
+                                <g id="그룹_4" data-name="그룹 4" style="isolation: isolate">
+                                    <path id="패스_1659" data-name="패스 1659" d="M301.36,395.222a2.419,2.419,0,0,1,1.209.28,2.1,2.1,0,0,1,.852.852l-1.4.68a1.035,1.035,0,0,0-.654-.455,1.383,1.383,0,0,0-.883.154,1.481,1.481,0,0,0-.641.519.574.574,0,0,0-.041.577.514.514,0,0,0,.341.283,1.6,1.6,0,0,0,.624,0c.26-.038.629-.117,1.1-.238a2.917,2.917,0,0,1,1.775-.013,1.915,1.915,0,0,1,1.021.99,1.764,1.764,0,0,1,.158,1.147,2.306,2.306,0,0,1-.564,1.08,3.658,3.658,0,0,1-1.132.832,3.7,3.7,0,0,1-1.461.394,2.479,2.479,0,0,1-1.295-.277,2.245,2.245,0,0,1-.919-.933l1.391-.677a1.124,1.124,0,0,0,.763.5,1.723,1.723,0,0,0,1.062-.191,1.329,1.329,0,0,0,.6-.522.648.648,0,0,0-.3-.939,1.264,1.264,0,0,0-.591-.043,6.853,6.853,0,0,0-.987.214,3.5,3.5,0,0,1-1.84.1,1.811,1.811,0,0,1-1.129-1.033,1.581,1.581,0,0,1-.13-1.089,2.29,2.29,0,0,1,.587-1.035,3.88,3.88,0,0,1,1.147-.821A3.153,3.153,0,0,1,301.36,395.222Z" transform="translate(-298.248 -395.221)" fill="#fff"/>
+                                </g>
+                            </g>
+                        </g>
+                        <g id="Path_1649" data-name="Path 1649" transform="translate(298.178 399.01)" opacity="0.259" style="isolation: isolate">
+                            <path id="패스_1660" data-name="패스 1660" d="M305.076,399.915c-.34-.919-.736,2.61-2.983,1.83s-2.059-.719-2.059-.719l-1.037.439a1.918,1.918,0,0,0,2.149,1.656l.043-.006C303.18,402.966,305.417,400.839,305.076,399.915Z" transform="translate(-298.998 -399.761)" fill="#9bbbfd"/>
+                        </g>
+                        <g id="Path_1650" data-name="Path 1650" transform="translate(296.676 396.249)" opacity="0.259" style="isolation: isolate">
+                            <path id="패스_1661" data-name="패스 1661" d="M298.215,396.758s.736,3.27,3.568,2.347-2.885,1.521-2.885,1.521l-1.535-1.95Z" transform="translate(-297.364 -396.758)" fill="#9bbbfd"/>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+        </v-btn>
+        <v-toolbar-title class="pl-0">사이콘</v-toolbar-title>
 
     </v-app-bar>
 </template>
 
 <script>
-export default {
-    props: ['title'],
-    data: ()=>({
-      // getTitle : null,
-    }),
 
-    methods: {
-      browserReload() {
-        // console.log('Reload Browser......')
-        location.reload();
-      },
+    export default {
 
+       name: "AppBar",
 
-    }, //methods 
+       computed: {
+       },
+       methods: {
 
-    computed: { 
-    //   ...mapState({
-    //  title: state => state.barTitle, 
-    //  }),
-      getTitle () {
-        // console.log('Compiutdd... ', this.$store.getters.getMsg)
-        return this.$store.getters.getMsg
-      }
-    }, // computed 
-}
+       },
+    }
+
 </script>
+
+<style lang="scss" scoped>
+    .v-toolbar__title{
+        font-size: 1rem !important;
+        color: #969696;
+    }
+</style>
